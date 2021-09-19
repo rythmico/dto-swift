@@ -17,7 +17,7 @@ final class XCTAssertJSONTests: XCTestCase {
                 self = .two
             }
         }
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         XCTAssertJSONCoding(BadSingleValue.one)
 
         struct GoodMultipleValue: Codable, Equatable {
@@ -38,7 +38,7 @@ final class XCTAssertJSONTests: XCTestCase {
                 try container.encode(int, forKey: .string)
             }
         }
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         XCTAssertJSONCoding(BadMultipleValue(string: "a", int: 3))
     }
 
@@ -55,14 +55,14 @@ final class XCTAssertJSONTests: XCTestCase {
                 self = .two
             }
         }
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         XCTAssertJSONCoding(BadEnum.self)
     }
 
     func testXCTAssertJSONEncoding() throws {
         struct Empty: Encodable {}
         try XCTAssertJSONEncoding(Empty(), JSON(raw: #"{}"#))
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONEncoding(Empty(), JSON(raw: #"[]"#))
 
         enum SingleValue: String, Encodable, CaseIterable {
@@ -70,9 +70,9 @@ final class XCTAssertJSONTests: XCTestCase {
         }
         try XCTAssertJSONEncoding(SingleValue.one, JSON("one"))
         try XCTAssertJSONEncoding(SingleValue.allCases, JSON(["one", "two", "three"]))
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONEncoding(SingleValue.two, JSON("one"))
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONEncoding(SingleValue.allCases.reversed(), JSON(["one", "two", "three"]))
 
         struct MultipleValue: Encodable {
@@ -83,7 +83,7 @@ final class XCTAssertJSONTests: XCTestCase {
             MultipleValue(string: "a", int: 3),
             JSON(["string": "a", "int": 3] as [String: AnyHashable])
         )
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONEncoding(
             MultipleValue(string: "b", int: 4),
             JSON(["string": "a", "int": 3] as [String: AnyHashable])
@@ -99,9 +99,9 @@ final class XCTAssertJSONTests: XCTestCase {
         }
         try XCTAssertJSONDecoding(JSON("one"), SingleValue.one)
         try XCTAssertJSONDecoding(JSON(["one", "two", "three"]), SingleValue.allCases)
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONDecoding(JSON("two"), SingleValue.one)
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONDecoding(JSON(["two", "one", "three"]), SingleValue.allCases)
 
         struct MultipleValue: Decodable, Equatable {
@@ -112,7 +112,7 @@ final class XCTAssertJSONTests: XCTestCase {
             JSON(["string": "a", "int": 3] as [String: AnyHashable]),
             MultipleValue(string: "a", int: 3)
         )
-        XCTExpectFailure(strict: true)
+        XCTExpectFailure(options: Self.options)
         try XCTAssertJSONDecoding(
             JSON(["string": "a", "int": 3] as [String: AnyHashable]),
             MultipleValue(string: "b", int: 4)
@@ -120,3 +120,11 @@ final class XCTAssertJSONTests: XCTestCase {
     }
 }
 
+private extension XCTAssertJSONTests {
+    static let options: XCTExpectedFailure.Options = {
+        let options = XCTExpectedFailure.Options()
+        options.isStrict = true
+        options.issueMatcher = { $0.type == .assertionFailure }
+        return options
+    }()
+}
