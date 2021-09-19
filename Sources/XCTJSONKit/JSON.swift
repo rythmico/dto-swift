@@ -75,15 +75,9 @@ extension JSON {
 }
 
 extension JSON {
-    #if compiler(>=5.5)
     public static var null: JSON {
         get throws {
             try JSON(NSNull())
         }
     }
-    #else
-    public static var null: JSON {
-        try! JSON(NSNull())
-    }
-    #endif
 }
