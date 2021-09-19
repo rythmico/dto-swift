@@ -55,7 +55,7 @@ public struct JSON: Equatable {
     private static func jsonObjectFromData(_ data: Data) throws -> AnyHashable {
         guard let jsonObject = try JSONSerialization.jsonObject(
             with: data,
-            options: [.fragmentsAllowed]
+            options: [.allowFragments]
         ) as? AnyHashable else {
             throw Error.invalidData(data)
         }
