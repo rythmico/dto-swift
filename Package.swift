@@ -29,6 +29,10 @@ let package = Package(
         ]),
 
         .target(name: "CoreDTO"),
+        .testTarget(name: "CoreDTOTests", dependencies: [
+            .target(name: "CoreDTO"),
+            .target(name: "XCTJSONKit"),
+        ]),
 
         .target(
             name: "XCTJSONKit",
