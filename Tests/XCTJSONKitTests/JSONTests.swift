@@ -32,7 +32,7 @@ final class JSONTests: XCTestCase {
         try assert(jsonObject: [["key": "value"]], raw: #"[{"key":"value"}]"#)
         try assert(jsonObject: [[1, 2, 3]], raw: #"[[1,2,3]]"#)
         try assert(jsonObject: [true, false, true], raw: #"[true,false,true]"#)
-        try assert(jsonObject: [NSNull(), NSNull(), NSNull()], raw: #"[null,null,null]"#)
+        try assert(jsonObject: [NSNull(), NSNull(), NSNull()].map(AnyHashable.init), raw: #"[null,null,null]"#)
 
         // booleans
         try assert(jsonObject: true, raw: #"true"#)
