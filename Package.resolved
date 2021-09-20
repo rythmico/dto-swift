@@ -18,6 +18,15 @@
           "revision": "50a70a9d3583fe228ce672e8923010c8df2deddd",
           "version": "0.2.1"
         }
+      },
+      {
+        "package": "XCTJSONKit",
+        "repositoryURL": "https://github.com/davdroman/XCTJSONKit",
+        "state": {
+          "branch": "main",
+          "revision": "aff4842b3f6d170096933f3392c6f95c451f4b74",
+          "version": null
+        }
       }
     ]
   },

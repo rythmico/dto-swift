@@ -31,20 +31,11 @@ let package = Package(
         .target(name: "CoreDTO"),
         .testTarget(name: "CoreDTOTests", dependencies: [
             .target(name: "CoreDTO"),
-            .target(name: "XCTJSONKit"),
-        ]),
-
-        .target(
-            name: "XCTJSONKit",
-            dependencies: [.product(name: "CustomDump", package: "swift-custom-dump")],
-            linkerSettings: [.linkedFramework("XCTest")]
-        ),
-        .testTarget(name: "XCTJSONKitTests", dependencies: [
-            .target(name: "XCTJSONKit"),
+            .product(name: "XCTJSONKit", package: "XCTJSONKit"),
         ]),
     ]
 )
 
 package.dependencies = [
-    .package(url: "https://github.com/pointfreeco/swift-custom-dump", from: "0.1.3"),
+    .package(url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
 ]
