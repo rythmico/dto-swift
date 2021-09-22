@@ -24,9 +24,9 @@ final class APIErrorTests: XCTestCase {
         XCTAssertEqual(apiError.helpAnchor, nil)
     }
 
-    func testCodable() {
-        XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: .bar))
-        XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: nil))
+    func testCodable() throws {
+        try XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: .bar))
+        try XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: nil))
     }
 
     func testDecoding_unknownReason() throws {
