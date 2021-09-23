@@ -9,15 +9,15 @@ final class APIErrorReasonTests: XCTestCase {
     }
 
     func testJSONDecoding() throws {
-        try XCTAssertJSONDecoding(JSON("foo"), Reason.foo)
-        try XCTAssertJSONDecoding(JSON("bar"), Reason.bar)
-        try XCTAssertJSONDecoding(JSON("unknown"), Reason.unknown)
-        try XCTAssertJSONDecoding(JSON("deadbeef"), Reason.unknown)
+        try XCTAssertJSONDecoding("foo", Reason.foo)
+        try XCTAssertJSONDecoding("bar", Reason.bar)
+        try XCTAssertJSONDecoding("unknown", Reason.unknown)
+        try XCTAssertJSONDecoding("deadbeef", Reason.unknown)
     }
 
     func testJSONEncoding() throws {
-        try XCTAssertJSONEncoding(Reason.foo, JSON("foo"))
-        try XCTAssertJSONEncoding(Reason.bar, JSON("bar"))
-        try XCTAssertJSONEncoding(Reason.unknown, JSON("unknown"))
+        try XCTAssertJSONEncoding(Reason.foo, "foo")
+        try XCTAssertJSONEncoding(Reason.bar, "bar")
+        try XCTAssertJSONEncoding(Reason.unknown, "unknown")
     }
 }

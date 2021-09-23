@@ -31,7 +31,7 @@ final class APIErrorTests: XCTestCase {
 
     func testDecoding_unknownReason() throws {
         try XCTAssertJSONDecoding(
-            JSON(["description": "Lorem ipsum", "reason": "foobaz"]),
+            ["description": "Lorem ipsum", "reason": "foobaz"],
             APIError(description: "Lorem ipsum", reason: .unknown)
         )
     }
