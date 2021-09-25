@@ -1,6 +1,6 @@
 import Foundation
 
-public struct APIError<Reason: APIErrorReason>: Codable, Equatable, LocalizedError {
+public struct APIError<Reason: APIErrorReason>: Codable, Equatable {
     public var description: String
     public var reason: Reason?
 
@@ -8,10 +8,6 @@ public struct APIError<Reason: APIErrorReason>: Codable, Equatable, LocalizedErr
         self.description = description
         self.reason = reason
     }
-}
-
-extension APIError {
-    public var errorDescription: String? { description }
 }
 
 // TODO: remove after backend migration.

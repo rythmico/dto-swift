@@ -12,16 +12,8 @@ final class APIErrorTests: XCTestCase {
 
     func testInit() {
         let apiError = APIError(description: "Lorem ipsum", reason: .bar)
-
         XCTAssertEqual(apiError.description, "Lorem ipsum")
-        XCTAssertEqual(apiError.errorDescription, "Lorem ipsum")
-        XCTAssertEqual(apiError.localizedDescription, "Lorem ipsum")
-
         XCTAssertEqual(apiError.reason, .bar)
-        XCTAssertEqual(apiError.failureReason, nil)
-
-        XCTAssertEqual(apiError.recoverySuggestion, nil)
-        XCTAssertEqual(apiError.helpAnchor, nil)
     }
 
     func testCodable() throws {
