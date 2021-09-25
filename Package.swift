@@ -23,9 +23,17 @@ let package = Package(
         .target(name: "StudentDTO", dependencies: [
             .target(name: "CoreDTO"),
         ]),
+        .testTarget(name: "StudentDTOTests", dependencies: [
+            .target(name: "StudentDTO"),
+            .product(name: "XCTJSONKit", package: "XCTJSONKit"),
+        ]),
 
         .target(name: "TutorDTO", dependencies: [
             .target(name: "CoreDTO"),
+        ]),
+        .testTarget(name: "TutorDTOTests", dependencies: [
+            .target(name: "TutorDTO"),
+            .product(name: "XCTJSONKit", package: "XCTJSONKit"),
         ]),
 
         .target(name: "CoreDTO"),

@@ -1,10 +1,16 @@
 import Foundation
 
-public protocol APIErrorReason: Codable, Equatable, RawRepresentable where RawValue == String {
+public enum APIErrorReason: String, APIErrorReasonProtocol, CaseIterable {
+    case clientOutdated = "APP_OUTDATED" // TODO: update to "CLIENT_OUTDATED" after backend migration.
+    case unknown = "UNKNOWN"
+}
+
+public protocol APIErrorReasonProtocol: Codable, Equatable, RawRepresentable where RawValue == String {
+    static var clientOutdated: Self { get }
     static var unknown: Self { get }
 }
 
-extension APIErrorReason {
+extension APIErrorReasonProtocol {
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         let rawValue = try container.decode(String.self)

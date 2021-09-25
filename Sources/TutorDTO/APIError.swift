@@ -1,3 +1,3 @@
 import Foundation
 
-public typealias APIError = CoreDTO.APIError<APIErrorReason>
+public typealias APIError = CoreDTO.APIErrorOf<APIErrorReason>

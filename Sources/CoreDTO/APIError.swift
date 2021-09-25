@@ -1,6 +1,8 @@
 import Foundation
 
-public struct APIError<Reason: APIErrorReason>: Codable, Equatable {
+public typealias APIError = APIErrorOf<APIErrorReason>
+
+public struct APIErrorOf<Reason: APIErrorReasonProtocol>: Codable, Equatable {
     public var description: String
     public var reason: Reason?
 
@@ -12,7 +14,7 @@ public struct APIError<Reason: APIErrorReason>: Codable, Equatable {
 
 // TODO: remove after backend migration.
 // Below is all backwards-compatibility support.
-extension APIError {
+extension APIErrorOf {
     private enum CodingKeys: String, CodingKey {
         case description
         case reason

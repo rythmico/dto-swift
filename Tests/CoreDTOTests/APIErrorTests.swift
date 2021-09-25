@@ -2,22 +2,14 @@ import CoreDTO
 import XCTJSONKit
 
 final class APIErrorTests: XCTestCase {
-    private enum Reason: String, APIErrorReason {
-        case foo
-        case bar
-        case unknown
-    }
-
-    private typealias APIError = CoreDTO.APIError<Reason>
-
     func testInit() {
-        let apiError = APIError(description: "Lorem ipsum", reason: .bar)
+        let apiError = APIError(description: "Lorem ipsum", reason: .clientOutdated)
         XCTAssertEqual(apiError.description, "Lorem ipsum")
-        XCTAssertEqual(apiError.reason, .bar)
+        XCTAssertEqual(apiError.reason, .clientOutdated)
     }
 
     func testCodable() throws {
-        try XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: .bar))
+        try XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: .clientOutdated))
         try XCTAssertJSONCoding(APIError(description: "Lorem ipsum", reason: nil))
     }
 
@@ -30,11 +22,11 @@ final class APIErrorTests: XCTestCase {
 
     func testDecoding_legacyAPIProperties() throws {
         try XCTAssertJSONDecoding(
-            ["errorDescription": "Lorem ipsum", "errorType": "foo"],
-            APIError(description: "Lorem ipsum", reason: .foo)
+            ["errorDescription": "Lorem ipsum", "errorType": "APP_OUTDATED"],
+            APIError(description: "Lorem ipsum", reason: .clientOutdated)
         )
         try XCTAssertJSONDecoding(
-            ["errorDescription": "Lorem ipsum", "errorType": "foobaz"],
+            ["errorDescription": "Lorem ipsum", "errorType": "deadbeef"],
             APIError(description: "Lorem ipsum", reason: .unknown)
         )
         try XCTAssertJSONDecoding(
@@ -44,12 +36,12 @@ final class APIErrorTests: XCTestCase {
 
         // Mixed
         try XCTAssertJSONDecoding(
-            ["description": "Lorem ipsum", "errorType": "foo"],
-            APIError(description: "Lorem ipsum", reason: .foo)
+            ["description": "Lorem ipsum", "errorType": "APP_OUTDATED"],
+            APIError(description: "Lorem ipsum", reason: .clientOutdated)
         )
         try XCTAssertJSONDecoding(
-            ["errorDescription": "Lorem ipsum", "reason": "foo"],
-            APIError(description: "Lorem ipsum", reason: .foo)
+            ["errorDescription": "Lorem ipsum", "reason": "APP_OUTDATED"],
+            APIError(description: "Lorem ipsum", reason: .clientOutdated)
         )
     }
 }
