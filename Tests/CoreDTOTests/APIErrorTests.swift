@@ -35,4 +35,29 @@ final class APIErrorTests: XCTestCase {
             APIError(description: "Lorem ipsum", reason: .unknown)
         )
     }
+
+    func testDecoding_legacyAPIProperties() throws {
+        try XCTAssertJSONDecoding(
+            ["errorDescription": "Lorem ipsum", "errorType": "foo"],
+            APIError(description: "Lorem ipsum", reason: .foo)
+        )
+        try XCTAssertJSONDecoding(
+            ["errorDescription": "Lorem ipsum", "errorType": "foobaz"],
+            APIError(description: "Lorem ipsum", reason: .unknown)
+        )
+        try XCTAssertJSONDecoding(
+            ["errorDescription": "Lorem ipsum", "errorType": nil],
+            APIError(description: "Lorem ipsum", reason: nil)
+        )
+
+        // Mixed
+        try XCTAssertJSONDecoding(
+            ["description": "Lorem ipsum", "errorType": "foo"],
+            APIError(description: "Lorem ipsum", reason: .foo)
+        )
+        try XCTAssertJSONDecoding(
+            ["errorDescription": "Lorem ipsum", "reason": "foo"],
+            APIError(description: "Lorem ipsum", reason: .foo)
+        )
+    }
 }
