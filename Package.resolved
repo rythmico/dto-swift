@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/rythmico/FoundationEncore",
         "state": {
           "branch": "main",
-          "revision": "02878c8ae2c13f139760af8478b27cbc89e898a7",
+          "revision": "194763239aa23d45b97280f9b8ff2e4e0c98532c",
           "version": null
         }
       },
@@ -105,7 +105,7 @@
         "repositoryURL": "https://github.com/davdroman/XCTJSONKit",
         "state": {
           "branch": "main",
-          "revision": "b9772e3b3a758343dc73d69b69ed19cefcdfae6e",
+          "revision": "3f6dad6245eff162fbbf57391c00c5bafe1830f5",
           "version": null
         }
       }
