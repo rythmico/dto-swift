@@ -1,13 +1,13 @@
 import Foundation
 
 public enum APIErrorReason: String, APIErrorReasonProtocol, CaseIterable {
-    case clientOutdated = "APP_OUTDATED" // TODO: update to "CLIENT_OUTDATED" after backend migration.
     case unknown = "UNKNOWN"
+    case clientOutdated = "APP_OUTDATED" // TODO: update to "CLIENT_OUTDATED" after backend migration.
 }
 
 public protocol APIErrorReasonProtocol: Codable, Equatable, RawRepresentable where RawValue == String {
-    static var clientOutdated: Self { get }
     static var unknown: Self { get }
+    static var clientOutdated: Self { get }
 }
 
 extension APIErrorReasonProtocol {
