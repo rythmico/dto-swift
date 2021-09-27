@@ -2,12 +2,93 @@
   "object": {
     "pins": [
       {
+        "package": "FoundationEncore",
+        "repositoryURL": "https://github.com/rythmico/FoundationEncore",
+        "state": {
+          "branch": "main",
+          "revision": "02878c8ae2c13f139760af8478b27cbc89e898a7",
+          "version": null
+        }
+      },
+      {
+        "package": "LegibleError",
+        "repositoryURL": "https://github.com/mxcl/LegibleError",
+        "state": {
+          "branch": null,
+          "revision": "3aeb15455edc0cd6ea0e8d562079db4ab9a25afc",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "PeriodDuration",
+        "repositoryURL": "https://github.com/davdroman/PeriodDuration",
+        "state": {
+          "branch": null,
+          "revision": "8c6d88e00ec2be7c80de97caf7104f76c1eab410",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "PreciseDecimal",
+        "repositoryURL": "https://github.com/davdroman/PreciseDecimal",
+        "state": {
+          "branch": null,
+          "revision": "a15081386a21414f445a0d14ffcfebd8df3c6da3",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms",
+        "state": {
+          "branch": null,
+          "revision": "2327673b0e9c7e90e6b1826376526ec3627210e4",
+          "version": "0.2.1"
+        }
+      },
+      {
         "package": "swift-custom-dump",
         "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
         "state": {
           "branch": null,
           "revision": "c2dd2c64b753dda592f5619303e02f741cd3e862",
           "version": "0.2.0"
+        }
+      },
+      {
+        "package": "swift-nonempty",
+        "repositoryURL": "https://github.com/pointfreeco/swift-nonempty",
+        "state": {
+          "branch": null,
+          "revision": "8074e5f2e4a6de5a42476e545cc33438021aa2a4",
+          "version": "0.4.0"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "6583ac70c326c3ee080c1d42d9ca3361dca816cd",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "swift-tagged",
+        "repositoryURL": "https://github.com/pointfreeco/swift-tagged",
+        "state": {
+          "branch": null,
+          "revision": "6c36cf66f58553d0481a2628e3e27177f698a897",
+          "version": "0.6.0"
+        }
+      },
+      {
+        "package": "Version",
+        "repositoryURL": "https://github.com/mxcl/Version",
+        "state": {
+          "branch": null,
+          "revision": "1fe824b80d89201652e7eca7c9252269a1d85e25",
+          "version": "2.0.1"
         }
       },
       {

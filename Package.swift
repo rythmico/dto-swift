@@ -36,7 +36,9 @@ let package = Package(
             .product(name: "XCTJSONKit", package: "XCTJSONKit"),
         ]),
 
-        .target(name: "CoreDTO"),
+        .target(name: "CoreDTO", dependencies: [
+            .product(name: "FoundationEncore", package: "FoundationEncore"),
+        ]),
         .testTarget(name: "CoreDTOTests", dependencies: [
             .target(name: "CoreDTO"),
             .product(name: "XCTJSONKit", package: "XCTJSONKit"),
@@ -45,5 +47,6 @@ let package = Package(
 )
 
 package.dependencies = [
+    .package(url: "https://github.com/rythmico/FoundationEncore", .branch("main")),
     .package(url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
 ]
