@@ -13,6 +13,7 @@ let package = Package(
         .library(name: "RythmicoDTO", targets: ["RythmicoDTO"]),
         .library(name: "StudentDTO", targets: ["StudentDTO"]),
         .library(name: "TutorDTO", targets: ["TutorDTO"]),
+        .library(name: "CoreDTO", targets: ["CoreDTO"]),
     ],
     targets: [
         .target(name: "RythmicoDTO", dependencies: [
