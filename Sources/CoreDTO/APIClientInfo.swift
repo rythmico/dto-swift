@@ -1,11 +1,16 @@
 import FoundationEncore
 
 public struct APIClientInfo {
-    public var id: String
+    public enum ID: String {
+        case student = "com.rythmico.student"
+        case tutor = "com.rythmico.tutor"
+    }
+
+    public var id: ID
     public var version: Version
     public var build: UInt
 
-    public init(id: String, version: Version, build: UInt) {
+    public init(id: ID, version: Version, build: UInt) {
         self.id = id
         self.version = version
         self.build = build
