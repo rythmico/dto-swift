@@ -8,7 +8,9 @@ final class APIClientInfoTests: XCTestCase {
             APIClientInfo(
                 id: $0,
                 version: Version(1, 0, 0),
-                build: 123
+                build: 123,
+                device: "iPhone10,1",
+                os: "iOS 15.0"
             )
         }
         .map { $0.encodeAsHTTPHeaders() }
@@ -18,11 +20,15 @@ final class APIClientInfoTests: XCTestCase {
                 "Client-ID": "com.rythmico.student",
                 "Client-Version": "1.0.0",
                 "Client-Build": "123",
+                "Client-Device-Model": "iPhone10,1",
+                "Client-Device-OS": "iOS 15.0",
             ],
             [
                 "Client-ID": "com.rythmico.tutor",
                 "Client-Version": "1.0.0",
                 "Client-Build": "123",
+                "Client-Device-Model": "iPhone10,1",
+                "Client-Device-OS": "iOS 15.0",
             ],
         ])
     }
