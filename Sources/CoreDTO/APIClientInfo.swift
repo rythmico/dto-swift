@@ -1,7 +1,7 @@
 import FoundationEncore
 
 public struct APIClientInfo {
-    public enum ID: String {
+    public enum ID: String, CaseIterable {
         case student = "com.rythmico.student"
         case tutor = "com.rythmico.tutor"
     }
@@ -23,4 +23,10 @@ extension APIClientInfo {
         public static let version = "Client-Version"
         public static let build = "Client-Build"
     }
+
+    public func encodeAsHTTPHeaders() -> [String: String] {[
+        HTTPHeaderName.id: id.rawValue,
+        HTTPHeaderName.version: String(version),
+        HTTPHeaderName.build: String(build),
+    ]}
 }
