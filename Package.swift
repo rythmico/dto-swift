@@ -20,6 +20,9 @@ let package = Package(
             .target(name: "StudentDTO"),
             .target(name: "TutorDTO"),
         ]),
+        .testTarget(name: "RythmicoDTOTests", dependencies: [
+            .target(name: "RythmicoDTO"),
+        ]),
 
         .target(name: "StudentDTO", dependencies: [
             .target(name: "CoreDTO"),
