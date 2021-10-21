@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "RythmicoDTO",
     platforms: [
-        .macOS(.v10_15),
         .iOS(.v13),
+        .macOS(.v10_15),
     ],
     products: [
         .library(name: "RythmicoDTO", targets: ["RythmicoDTO"]),
