@@ -1,6 +1,6 @@
 import Foundation
 
-public struct AddressLookupItem: AddressProtocol, Codable, Equatable {
+public struct AddressLookupItem: AddressProtocol, Codable, Hashable {
     public var latitude: Double
     public var longitude: Double
     public var line1: String
