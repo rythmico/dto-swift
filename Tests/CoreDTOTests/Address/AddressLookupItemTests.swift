@@ -2,7 +2,19 @@ import CoreDTO
 import XCTJSONKit
 
 final class AddressLookupItemTests: XCTestCase {
-    let sut = AddressLookupItem(latitude: 1, longitude: 2, line1: "A", line2: "B", line3: "C", line4: "D", city: "E", postcode: "F", country: "G")
+    let sut = AddressLookupItem(
+        latitude: 1,
+        longitude: 2,
+        line1: "A",
+        line2: "B",
+        line3: "C",
+        line4: "D",
+        district: "E",
+        city: "F",
+        state: "G",
+        postcode: "H",
+        country: "I"
+    )
 
     func testInit() throws {
         XCTAssertEqual(sut.latitude, 1)
@@ -11,9 +23,11 @@ final class AddressLookupItemTests: XCTestCase {
         XCTAssertEqual(sut.line2, "B")
         XCTAssertEqual(sut.line3, "C")
         XCTAssertEqual(sut.line4, "D")
-        XCTAssertEqual(sut.city, "E")
-        XCTAssertEqual(sut.postcode, "F")
-        XCTAssertEqual(sut.country, "G")
+        XCTAssertEqual(sut.district, "E")
+        XCTAssertEqual(sut.city, "F")
+        XCTAssertEqual(sut.state, "G")
+        XCTAssertEqual(sut.postcode, "H")
+        XCTAssertEqual(sut.country, "I")
     }
 
     func testJSONCoding() throws {

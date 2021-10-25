@@ -7,7 +7,9 @@ public protocol AddressProtocol {
     var line2: String { get }
     var line3: String { get }
     var line4: String { get }
+    var district: String { get }
     var city: String { get }
+    var state: String { get }
     var postcode: String { get }
     var country: String { get }
 }
