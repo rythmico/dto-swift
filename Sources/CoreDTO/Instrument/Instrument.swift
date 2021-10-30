@@ -1,10 +1,13 @@
 import Foundation
 
 public struct Instrument: Codable, Hashable, Identifiable {
+    /// An ID (known by server, maybe unknown by client)
     public var id: ID
+    /// Standalone noun.
+    /// e.g. "Drums".
     public var standaloneName: String
     /// Noun to be joined with other nouns.
-    /// i.e. "Drum lessons", "Drum tutor".
+    /// e.g. "Drum lessons", "Drum tutor".
     public var assimilatedName: String
 
     public init(
