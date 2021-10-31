@@ -53,6 +53,21 @@ extension Instrument {
     }
 }
 
+extension Instrument.ID {
+    init(rawValue: String) {
+        self = Instrument.KnownID(rawValue: rawValue).map(Self.known) ?? .unknown(rawValue)
+    }
+
+    public var rawValue: String {
+        switch self {
+        case .known(let knownID):
+            return knownID.rawValue
+        case .unknown(let rawValue):
+            return rawValue
+        }
+    }
+}
+
 extension Instrument.ID: Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
@@ -60,22 +75,15 @@ extension Instrument.ID: Codable {
         self.init(rawValue: rawValue)
     }
 
-    init(rawValue: String) {
-        self = Instrument.KnownID(rawValue: rawValue).map(Self.known) ?? .unknown(rawValue)
-    }
-
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         try container.encode(rawValue)
     }
+}
 
-    var rawValue: String {
-        switch self {
-        case .known(let knownID):
-            return knownID.rawValue
-        case .unknown(let rawValue):
-            return rawValue
-        }
+extension Instrument.ID: CustomStringConvertible {
+    public var description: String {
+        rawValue
     }
 }
 

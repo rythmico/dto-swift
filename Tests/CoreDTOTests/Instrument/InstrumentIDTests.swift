@@ -4,6 +4,11 @@ import XCTJSONKit
 final class InstrumentIDTests: XCTestCase {}
 
 extension InstrumentIDTests {
+    func testRawValue() {
+        XCTAssertEqual(Instrument.ID.known(.guitar).rawValue, "GUITAR")
+        XCTAssertEqual(Instrument.ID.unknown("PIANO").rawValue, "PIANO")
+    }
+
     func testCodable() throws {
         // Known IDs
         for knownID in Instrument.KnownID.allCases {
@@ -29,6 +34,16 @@ extension InstrumentIDTests {
         }
         // Unknown IDs
         try XCTAssertJSONEncoding(Instrument.ID.unknown("lorem ipsum"), "lorem ipsum")
+    }
+
+    func testDescription() {
+        let knownID = Instrument.ID.known(.guitar)
+        XCTAssertEqual(knownID.description, "GUITAR")
+        XCTAssertEqual("\(knownID)", "GUITAR")
+
+        let unknownID = Instrument.ID.unknown("PIANO")
+        XCTAssertEqual(unknownID.description, "PIANO")
+        XCTAssertEqual("\(unknownID)", "PIANO")
     }
 
     func testEquatable() {
