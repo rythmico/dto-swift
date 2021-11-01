@@ -1,5 +1,3 @@
-import FoundationEncore
+import Foundation
 
-public protocol APIEventProtocol: Codable, Equatable, RawRepresentableWithUnknown where RawValue == String {
-    static var unknown: Self { get }
-}
+public protocol APIEventProtocol: RawRepresentable, Codable, Equatable where RawValue == String {}

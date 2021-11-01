@@ -1,7 +1,8 @@
-import Foundation
+import FoundationEncore
 
-public enum APIEvent: String, APIEventProtocol {
-    case unknown = "UNKNOWN"
+public typealias APIEvent = Knowable<KnownAPIEvent>
+
+public enum KnownAPIEvent: String, APIEventProtocol {
     case bookingRequestsChanged = "BOOKING_REQUESTS_CHANGED"
     case bookingApplicationsChanged = "BOOKING_APPLICATIONS_CHANGED"
 }
