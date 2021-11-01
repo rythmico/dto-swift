@@ -6,6 +6,6 @@ public protocol APIErrorReasonProtocol: RawRepresentable, Codable, Equatable whe
 }
 
 public enum APIErrorReason: String, APIErrorReasonProtocol, CaseIterable {
-    case clientOutdated = "APP_OUTDATED" // TODO: update to "CLIENT_OUTDATED" after backend migration.
+    case clientOutdated = "CLIENT_OUTDATED"
     case unauthorized = "UNAUTHORIZED"
 }

@@ -15,7 +15,7 @@ final class APIErrorTests: XCTestCase {
 
     func testDecodings() throws {
         try XCTAssertJSONDecoding(
-            ["description": "Lorem ipsum", "reason": "APP_OUTDATED"],
+            ["description": "Lorem ipsum", "reason": "CLIENT_OUTDATED"],
             APIError(description: "Lorem ipsum", reason: .known(.clientOutdated))
         )
         try XCTAssertJSONDecoding(
