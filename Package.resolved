@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/rythmico/FoundationEncore",
         "state": {
           "branch": "main",
-          "revision": "c2fe83cbf2ecd30bd4fba9aa8d710edb1f99dffa",
+          "revision": "04cb93c23832dae6ce6d499458a8ded0d71e736a",
           "version": null
         }
       },
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/davdroman/PeriodDuration",
         "state": {
           "branch": null,
-          "revision": "e6c50c636ea65ede2aede11bc94a65c34b1a22ac",
-          "version": "0.6.0"
+          "revision": "2cacb6772d72924a33f98ce04d2a8707a063bf17",
+          "version": "0.7.0"
         }
       },
       {
