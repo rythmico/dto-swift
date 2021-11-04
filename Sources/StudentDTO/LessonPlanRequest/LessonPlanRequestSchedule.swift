@@ -1,5 +1,9 @@
 import FoundationEncore
 
+extension LessonPlanRequest {
+    public typealias Schedule = LessonPlanRequestSchedule
+}
+
 public struct LessonPlanRequestSchedule: Codable, Hashable {
     public var start: DateOnly
     public var time: TimeOnly
