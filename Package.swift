@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "RythmicoDTO",
+    name: "DTO",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
     ],
     products: [
-        .library(name: "RythmicoDTO", targets: ["RythmicoDTO"]),
+        .library(name: "DTO", targets: ["DTO"]),
         .library(name: "StudentDTO", targets: ["StudentDTO"]),
         .library(name: "TutorDTO", targets: ["TutorDTO"]),
         .library(name: "CoreDTO", targets: ["CoreDTO"]),
     ],
     targets: [
-        .target(name: "RythmicoDTO", dependencies: [
+        .target(name: "DTO", dependencies: [
             .target(name: "StudentDTO"),
             .target(name: "TutorDTO"),
         ]),
