@@ -48,6 +48,6 @@ let package = Package(
 )
 
 package.dependencies = [
-    .package(url: "https://github.com/rythmico/FoundationEncore", .branch("main")),
-    .package(url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
+    .package(name: "FoundationEncore", url: "https://github.com/rythmico/swift-foundation-encore", .branch("main")),
+    .package(name: "XCTJSONKit", url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
 ]
