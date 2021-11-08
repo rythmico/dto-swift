@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "FoundationEncore",
-        "repositoryURL": "https://github.com/rythmico/FoundationEncore",
-        "state": {
-          "branch": "main",
-          "revision": "0388926f7d4830cb55241f1abf4ad00b25df8df4",
-          "version": null
-        }
-      },
-      {
         "package": "LegibleError",
         "repositoryURL": "https://github.com/mxcl/LegibleError",
         "state": {
@@ -62,6 +53,15 @@
           "branch": null,
           "revision": "21f8fdbb3226e5e28a1a2fffac3e0f3deec34bf0",
           "version": "0.2.1"
+        }
+      },
+      {
+        "package": "FoundationEncore",
+        "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
+        "state": {
+          "branch": "main",
+          "revision": "0388926f7d4830cb55241f1abf4ad00b25df8df4",
+          "version": null
         }
       },
       {

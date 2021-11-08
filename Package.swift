@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "RythmicoDTO",
+    name: "DTO",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
     ],
     products: [
-        .library(name: "RythmicoDTO", targets: ["RythmicoDTO"]),
+        .library(name: "DTO", targets: ["DTO"]),
         .library(name: "StudentDTO", targets: ["StudentDTO"]),
         .library(name: "TutorDTO", targets: ["TutorDTO"]),
         .library(name: "CoreDTO", targets: ["CoreDTO"]),
     ],
     targets: [
-        .target(name: "RythmicoDTO", dependencies: [
+        .target(name: "DTO", dependencies: [
             .target(name: "StudentDTO"),
             .target(name: "TutorDTO"),
         ]),
@@ -48,6 +48,6 @@ let package = Package(
 )
 
 package.dependencies = [
-    .package(url: "https://github.com/rythmico/FoundationEncore", .branch("main")),
-    .package(url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
+    .package(name: "FoundationEncore", url: "https://github.com/rythmico/swift-foundation-encore", .branch("main")),
+    .package(name: "XCTJSONKit", url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
 ]
