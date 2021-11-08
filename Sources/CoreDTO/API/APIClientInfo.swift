@@ -1,7 +1,7 @@
 import FoundationEncore
 
-public struct APIClientInfo {
-    public enum ID: String, CaseIterable {
+public struct APIClientInfo: Hashable {
+    public enum ID: String, CaseIterable, Hashable {
         case student = "com.rythmico.student"
         case tutor = "com.rythmico.tutor"
     }
