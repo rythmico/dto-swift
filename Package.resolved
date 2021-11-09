@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/davdroman/PeriodDuration",
         "state": {
           "branch": null,
-          "revision": "bc5edf7c2cb537b27db2124e87060ffc23cf1a54",
-          "version": "0.8.0"
+          "revision": "5d11c1c375cd4e12d4dd9a08fc0dbe271f41026e",
+          "version": "0.9.0"
         }
       },
       {
@@ -60,7 +60,7 @@
         "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
         "state": {
           "branch": "main",
-          "revision": "0388926f7d4830cb55241f1abf4ad00b25df8df4",
+          "revision": "9101a895f447fc4f08710ef09533bddc833c86e1",
           "version": null
         }
       },
