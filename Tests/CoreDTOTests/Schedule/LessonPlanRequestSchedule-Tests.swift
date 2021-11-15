@@ -1,4 +1,4 @@
-import TutorDTO
+import CoreDTO
 import XCTJSONKit
 
 final class LessonPlanRequestScheduleTests: XCTestCase {

@@ -2,6 +2,7 @@ import FoundationEncore
 
 public struct LessonPlanRequest: Codable, Hashable, Identifiable {
     public typealias ID = Tagged<Self, String>
+    public typealias Schedule = LessonPlanRequestSchedule
 
     public var id: ID
     public var submitterName: String
