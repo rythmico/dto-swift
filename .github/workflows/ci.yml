@@ -30,7 +30,6 @@ jobs:
       with:
         swift: ~5.5
         platform: ${{ matrix.platform }}
-        warnings-as-errors: true
   linux:
     runs-on: ubuntu-latest
     container:
