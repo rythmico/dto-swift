@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "PhoneNumberKit",
+        "repositoryURL": "https://github.com/davdroman/PhoneNumberKit",
+        "state": {
+          "branch": "master",
+          "revision": "6496ab3221076a3430df93f5cf8150ac8e413f17",
+          "version": null
+        }
+      },
+      {
         "package": "PreciseDecimal",
         "repositoryURL": "https://github.com/davdroman/PreciseDecimal",
         "state": {
@@ -60,7 +69,7 @@
         "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
         "state": {
           "branch": "main",
-          "revision": "60972a1a7026c683974856d4828be0befad7d438",
+          "revision": "cfbe072e5cec1437ae7e8e6e370a82833c1c002c",
           "version": null
         }
       },
