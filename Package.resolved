@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "MobileProvision",
+        "repositoryURL": "https://github.com/CrazyFanFan/MobileProvision",
+        "state": {
+          "branch": "master",
+          "revision": "a08a91c3c4346fa465c520728429d73147bdcf0a",
+          "version": null
+        }
+      },
+      {
         "package": "PeriodDuration",
         "repositoryURL": "https://github.com/davdroman/PeriodDuration",
         "state": {
@@ -69,7 +78,7 @@
         "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
         "state": {
           "branch": "main",
-          "revision": "894e7a7a36651d506a9bd86b1d09aa40ac48fdde",
+          "revision": "6bc179949cd4f4024d57dc9e38c60b079605c484",
           "version": null
         }
       },
