@@ -48,6 +48,7 @@ final class LessonPlanRequestTests: XCTestCase {
         XCTAssertEqual(sut.privateNote, "PRIVATE_NOTE")
     }
 
+    // TODO: unit test all Codable status scenarios
     func testCodable() throws {
         try XCTAssertJSONCoding(sut)
     }
