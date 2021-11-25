@@ -35,9 +35,9 @@ extension LessonPlanRequest {
     public enum Status: Codable, Hashable {
         case pending
         // TODO
+//        case withdrawn
 //        case reviewing
 //        case completed
-//        case withdrawn
 
         public init(from decoder: Decoder) throws {
             self = .pending
