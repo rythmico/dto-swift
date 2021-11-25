@@ -2,7 +2,7 @@ import TutorDTO
 import XCTJSONKit
 
 final class LessonPlanApplicationTests: XCTestCase {
-    let sut = try! LessonPlanApplication(
+    let sut = LessonPlanApplication(
         id: "APPLICATION_ID",
         status: .pending,
         createdAt: "2021-11-25T13:25:00Z",
@@ -22,9 +22,9 @@ final class LessonPlanApplicationTests: XCTestCase {
                 districtCode: "DISTRICT_CODE"
             ),
             schedule: LessonPlanRequestSchedule(
-                start: DateOnly(year: 2021, month: 07, day: 21),
-                time: TimeOnly(hour: 17, minute: 24),
-                duration: Duration(hours: 2, minutes: 10, seconds: 5)
+                start: "2021-07-21",
+                time: "17:24",
+                duration: .init(hours: 2, minutes: 10, seconds: 5)
             ),
             privateNote: "REQUEST_PRIVATE_NOTE"
         ),
