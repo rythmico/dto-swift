@@ -74,11 +74,20 @@
         }
       },
       {
+        "package": "swift-custom-dump",
+        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
+        "state": {
+          "branch": null,
+          "revision": "21f8fdbb3226e5e28a1a2fffac3e0f3deec34bf0",
+          "version": "0.2.1"
+        }
+      },
+      {
         "package": "FoundationEncore",
         "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
         "state": {
           "branch": "main",
-          "revision": "4b81d2bb9e9ecdcbfaf4df89a5620d66323c5a5a",
+          "revision": "6cbf352af8a651f9e5f4293b6afac7f00c375e16",
           "version": null
         }
       },
@@ -132,7 +141,7 @@
         "repositoryURL": "https://github.com/davdroman/XCTJSONKit",
         "state": {
           "branch": "main",
-          "revision": "867857624cf43c142260dc09be33cee39ed71cca",
+          "revision": "0186d200c7f289055465bbc322505d66b4762787",
           "version": null
         }
       }
