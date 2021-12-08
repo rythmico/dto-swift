@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
         "state": {
           "branch": null,
-          "revision": "21f8fdbb3226e5e28a1a2fffac3e0f3deec34bf0",
-          "version": "0.2.1"
+          "revision": "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
+          "version": "0.3.0"
         }
       },
       {
@@ -87,7 +87,7 @@
         "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
         "state": {
           "branch": "main",
-          "revision": "2a465f5cc081fd1e50fba69d3eb10800f59b9591",
+          "revision": "9b5c15d067da12c4793f82510b9d204e58f7ffb2",
           "version": null
         }
       },
