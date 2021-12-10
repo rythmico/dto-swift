@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class StudentTests: XCTestCase {
+final class StudentTests: DTOTestCase {
     func testInit() {
         let sut = Student(
             name: "Alice",

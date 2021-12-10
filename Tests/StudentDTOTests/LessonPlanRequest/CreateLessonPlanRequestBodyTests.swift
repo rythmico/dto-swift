@@ -1,7 +1,7 @@
 import StudentDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class CreateLessonPlanRequestBodyTests: XCTestCase {
+final class CreateLessonPlanRequestBodyTests: DTOTestCase {
     let sut = try! CreateLessonPlanRequestBody(
         instrument: .known(.guitar),
         student: Student(

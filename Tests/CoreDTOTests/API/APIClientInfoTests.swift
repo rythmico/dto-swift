@@ -1,8 +1,7 @@
 import CoreDTO
-import CustomDump
-import XCTest
+import XCTDTOKit
 
-final class APIClientInfoTests: XCTestCase {
+final class APIClientInfoTests: DTOTestCase {
     func testEncodeAsHTTPHeaders() throws {
         let sut = APIClientInfo.ID.allCases.map {
             APIClientInfo(

@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class ProfileStatusTests: XCTestCase {
+final class ProfileStatusTests: DTOTestCase {
     func testCodable() throws {
         try XCTAssertJSONCoding(ProfileStatus.registrationPending(formURL: "https://api.rythmico.com/test-url?foo=bar"))
         try XCTAssertJSONCoding(ProfileStatus.interviewPending)

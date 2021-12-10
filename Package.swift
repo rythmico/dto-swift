@@ -26,7 +26,7 @@ let package = Package(
         ]),
         .testTarget(name: "StudentDTOTests", dependencies: [
             .target(name: "StudentDTO"),
-            .product(name: "XCTJSONKit", package: "XCTJSONKit"),
+            .target(name: "XCTDTOKit"),
         ]),
 
         .target(name: "TutorDTO", dependencies: [
@@ -34,7 +34,7 @@ let package = Package(
         ]),
         .testTarget(name: "TutorDTOTests", dependencies: [
             .target(name: "TutorDTO"),
-            .product(name: "XCTJSONKit", package: "XCTJSONKit"),
+            .target(name: "XCTDTOKit"),
         ]),
 
         .target(name: "CoreDTO", dependencies: [
@@ -42,6 +42,11 @@ let package = Package(
         ]),
         .testTarget(name: "CoreDTOTests", dependencies: [
             .target(name: "CoreDTO"),
+            .target(name: "XCTDTOKit"),
+        ]),
+
+        .target(name: "XCTDTOKit", dependencies: [
+            .product(name: "FoundationEncore", package: "FoundationEncore"),
             .product(name: "XCTJSONKit", package: "XCTJSONKit"),
         ]),
     ]
