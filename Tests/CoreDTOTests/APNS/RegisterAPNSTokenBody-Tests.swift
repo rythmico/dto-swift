@@ -1,7 +1,7 @@
 import CoreDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class RegisterAPNSTokenBodyTests: XCTestCase {
+final class RegisterAPNSTokenBodyTests: DTOTestCase {
     func testInit() {
         RegisterAPNSTokenBody(deviceToken: "DEVICE_TOKEN", environment: .sandbox) => { sut in
             XCTAssertEqual(sut.deviceToken, "DEVICE_TOKEN")
@@ -23,7 +23,7 @@ final class RegisterAPNSTokenBodyTests: XCTestCase {
     }
 }
 
-final class RegisterAPNSTokenBodyEnvironmentTests: XCTestCase {
+final class RegisterAPNSTokenBodyEnvironmentTests: DTOTestCase {
     func testEncodable() throws {
         try XCTAssertJSONEncoding(RegisterAPNSTokenBody.Environment.sandbox, "sandbox")
         try XCTAssertJSONEncoding(RegisterAPNSTokenBody.Environment.production, "production")

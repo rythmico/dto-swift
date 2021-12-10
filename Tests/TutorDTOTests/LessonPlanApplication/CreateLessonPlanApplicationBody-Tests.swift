@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class CreateLessonPlanApplicationBodyTests: XCTestCase {
+final class CreateLessonPlanApplicationBodyTests: DTOTestCase {
     let sut = CreateLessonPlanApplicationBody(
         requestID: "REQUEST_ID",
         privateNote: "Lorem ipsum"

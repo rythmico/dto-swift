@@ -1,7 +1,7 @@
 import StudentDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class LessonPlanRequestTests: XCTestCase {
+final class LessonPlanRequestTests: DTOTestCase {
     let sut = try! LessonPlanRequest(
         id: "ID",
         status: .pending,

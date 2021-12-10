@@ -1,7 +1,7 @@
 import StudentDTO
-import XCTest
+import XCTDTOKit
 
-final class LessonPlanRequestSchedule_ValidDurationsTests: XCTestCase {
+final class LessonPlanRequestSchedule_ValidDurationsTests: DTOTestCase {
     func testValidDurations() throws {
         XCTAssertEqual(LessonPlanRequestSchedule.ValidDuration.fortyFiveMinutes, Duration(minutes: 45))
         XCTAssertEqual(LessonPlanRequestSchedule.ValidDuration.sixtyMinutes, Duration(minutes: 60))

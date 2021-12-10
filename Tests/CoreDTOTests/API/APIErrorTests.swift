@@ -1,7 +1,7 @@
 import CoreDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class APIErrorTests: XCTestCase {
+final class APIErrorTests: DTOTestCase {
     func testInit() {
         let apiError = APIError(description: "Lorem ipsum", reason: .known(.clientOutdated))
         XCTAssertEqual(apiError.description, "Lorem ipsum")

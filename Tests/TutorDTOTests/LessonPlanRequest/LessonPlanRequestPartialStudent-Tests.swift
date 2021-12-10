@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class LessonPlanRequestPartialStudentTests: XCTestCase {
+final class LessonPlanRequestPartialStudentTests: DTOTestCase {
     func testInit() throws {
         let sut = LessonPlanRequestPartialStudent(
             firstName: "David",

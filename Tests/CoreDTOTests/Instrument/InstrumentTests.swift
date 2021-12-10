@@ -1,7 +1,7 @@
 import CoreDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class InstrumentTests: XCTestCase {}
+final class InstrumentTests: DTOTestCase {}
 
 extension InstrumentTests {
     func testInit() throws {

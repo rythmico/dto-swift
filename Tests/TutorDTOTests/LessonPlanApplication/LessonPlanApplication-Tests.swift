@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class LessonPlanApplicationTests: XCTestCase {
+final class LessonPlanApplicationTests: DTOTestCase {
     let sut = LessonPlanApplication(
         id: "APPLICATION_ID",
         status: .pending,

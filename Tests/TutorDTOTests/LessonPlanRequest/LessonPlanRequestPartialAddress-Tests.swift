@@ -1,7 +1,7 @@
 import TutorDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class LessonPlanRequestPartialAddressTests: XCTestCase {
+final class LessonPlanRequestPartialAddressTests: DTOTestCase {
     func testInit() throws {
         let sut = LessonPlanRequestPartialAddress(
             latitude: 123,

@@ -1,7 +1,7 @@
 import StudentDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class APIErrorReasonTests: XCTestCase {
+final class APIErrorReasonTests: DTOTestCase {
     func testConsistentCoreReasonsRawValues() {
         for coreReason in CoreDTO.APIErrorReason.allCases {
             let sut = StudentDTO.APIErrorReason(rawValue: coreReason.rawValue)

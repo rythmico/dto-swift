@@ -1,7 +1,7 @@
 import CoreDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class AddressLookupItemTests: XCTestCase {
+final class AddressLookupItemTests: DTOTestCase {
     let sut = AddressLookupItem(
         latitude: 1,
         longitude: 2,

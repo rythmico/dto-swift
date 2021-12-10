@@ -1,7 +1,7 @@
 import CoreDTO
-import XCTJSONKit
+import XCTDTOKit
 
-final class LessonPlanRequestScheduleTests: XCTestCase {
+final class LessonPlanRequestScheduleTests: DTOTestCase {
     func testInit() throws {
         let sut = try LessonPlanRequestSchedule(
             start: DateOnly(year: 2021, month: 07, day: 21),
