@@ -96,7 +96,7 @@
         "repositoryURL": "https://github.com/rythmico/swift-encore",
         "state": {
           "branch": "main",
-          "revision": "3344e6b0727ef917727098f35838dfec78f0eeff",
+          "revision": "77b4c6d02f77a729daa81f9924d75aa40520eff3",
           "version": null
         }
       },
@@ -141,8 +141,8 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-tagged",
         "state": {
           "branch": null,
-          "revision": "6c36cf66f58553d0481a2628e3e27177f698a897",
-          "version": "0.6.0"
+          "revision": "f3f773a5e13f3c8f0ab1ce2ae6378058acefa87d",
+          "version": "0.7.0"
         }
       },
       {
