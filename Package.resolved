@@ -1,178 +1,176 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "CollectionConcurrencyKit",
-        "repositoryURL": "https://github.com/JohnSundell/CollectionConcurrencyKit",
-        "state": {
-          "branch": null,
-          "revision": "b4f23e24b5a1bff301efc5e70871083ca029ff95",
-          "version": "0.2.0"
-        }
-      },
-      {
-        "package": "LegibleError",
-        "repositoryURL": "https://github.com/mxcl/LegibleError",
-        "state": {
-          "branch": null,
-          "revision": "bc596702d7ff618c3f90ba480eeb48b3e83a2fbe",
-          "version": "1.0.6"
-        }
-      },
-      {
-        "package": "MobileProvision",
-        "repositoryURL": "https://github.com/CrazyFanFan/MobileProvision",
-        "state": {
-          "branch": null,
-          "revision": "4a1169e50976b17b510467a81ed254642879d4fa",
-          "version": "0.0.2"
-        }
-      },
-      {
-        "package": "PeriodDuration",
-        "repositoryURL": "https://github.com/davdroman/PeriodDuration",
-        "state": {
-          "branch": null,
-          "revision": "d6689e32ec22f77cd45c4967ed0d103d81c1abb9",
-          "version": "0.10.0"
-        }
-      },
-      {
-        "package": "PhoneNumberKit",
-        "repositoryURL": "https://github.com/davdroman/PhoneNumberKit",
-        "state": {
-          "branch": "davdroman-improvements",
-          "revision": "d9f14aa3f61a4f9bf3d6ce1f01e2d57dd71bb948",
-          "version": null
-        }
-      },
-      {
-        "package": "PreciseDecimal",
-        "repositoryURL": "https://github.com/davdroman/PreciseDecimal",
-        "state": {
-          "branch": "main",
-          "revision": "2ab57fc9a2262204c2bde46d133d2b9dd72e74a0",
-          "version": null
-        }
-      },
-      {
-        "package": "swift-algorithms",
-        "repositoryURL": "https://github.com/apple/swift-algorithms",
-        "state": {
-          "branch": null,
-          "revision": "b14b7f4c528c942f121c8b860b9410b2bf57825e",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "swift-case-paths",
-        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
-        "state": {
-          "branch": null,
-          "revision": "241301b67d8551c26d8f09bd2c0e52cc49f18007",
-          "version": "0.8.0"
-        }
-      },
-      {
-        "package": "swift-collections",
-        "repositoryURL": "https://github.com/apple/swift-collections",
-        "state": {
-          "branch": null,
-          "revision": "48254824bb4248676bf7ce56014ff57b142b77eb",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "swift-custom-dump",
-        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
-        "state": {
-          "branch": null,
-          "revision": "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
-          "version": "0.3.0"
-        }
-      },
-      {
-        "package": "SwiftEncore",
-        "repositoryURL": "https://github.com/rythmico/swift-encore",
-        "state": {
-          "branch": "main",
-          "revision": "77b4c6d02f77a729daa81f9924d75aa40520eff3",
-          "version": null
-        }
-      },
-      {
-        "package": "FoundationEncore",
-        "repositoryURL": "https://github.com/rythmico/swift-foundation-encore",
-        "state": {
-          "branch": "main",
-          "revision": "d14e2c93b59b02983e63dbd6be0289964ce7eae3",
-          "version": null
-        }
-      },
-      {
-        "package": "swift-identified-collections",
-        "repositoryURL": "https://github.com/pointfreeco/swift-identified-collections",
-        "state": {
-          "branch": null,
-          "revision": "680bf440178a78a627b1c2c64c0855f6523ad5b9",
-          "version": "0.3.2"
-        }
-      },
-      {
-        "package": "swift-nonempty",
-        "repositoryURL": "https://github.com/pointfreeco/swift-nonempty",
-        "state": {
-          "branch": null,
-          "revision": "8074e5f2e4a6de5a42476e545cc33438021aa2a4",
-          "version": "0.4.0"
-        }
-      },
-      {
-        "package": "swift-numerics",
-        "repositoryURL": "https://github.com/apple/swift-numerics",
-        "state": {
-          "branch": null,
-          "revision": "0a5bc04095a675662cf24757cc0640aa2204253b",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "swift-tagged",
-        "repositoryURL": "https://github.com/pointfreeco/swift-tagged",
-        "state": {
-          "branch": null,
-          "revision": "f3f773a5e13f3c8f0ab1ce2ae6378058acefa87d",
-          "version": "0.7.0"
-        }
-      },
-      {
-        "package": "Version",
-        "repositoryURL": "https://github.com/mxcl/Version",
-        "state": {
-          "branch": null,
-          "revision": "1fe824b80d89201652e7eca7c9252269a1d85e25",
-          "version": "2.0.1"
-        }
-      },
-      {
-        "package": "xctest-dynamic-overlay",
-        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
-        "state": {
-          "branch": null,
-          "revision": "50a70a9d3583fe228ce672e8923010c8df2deddd",
-          "version": "0.2.1"
-        }
-      },
-      {
-        "package": "XCTJSONKit",
-        "repositoryURL": "https://github.com/davdroman/XCTJSONKit",
-        "state": {
-          "branch": "main",
-          "revision": "7e161faf6024c7488437d799c415fc8c666f3a05",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "collectionconcurrencykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnSundell/CollectionConcurrencyKit",
+      "state" : {
+        "revision" : "b4f23e24b5a1bff301efc5e70871083ca029ff95",
+        "version" : "0.2.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "legibleerror",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/LegibleError",
+      "state" : {
+        "revision" : "bc596702d7ff618c3f90ba480eeb48b3e83a2fbe",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "mobileprovision",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CrazyFanFan/MobileProvision",
+      "state" : {
+        "revision" : "4a1169e50976b17b510467a81ed254642879d4fa",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "periodduration",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davdroman/PeriodDuration",
+      "state" : {
+        "revision" : "d6689e32ec22f77cd45c4967ed0d103d81c1abb9",
+        "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "phonenumberkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davdroman/PhoneNumberKit",
+      "state" : {
+        "branch" : "davdroman-improvements",
+        "revision" : "d9f14aa3f61a4f9bf3d6ce1f01e2d57dd71bb948"
+      }
+    },
+    {
+      "identity" : "precisedecimal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davdroman/PreciseDecimal",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2ab57fc9a2262204c2bde46d133d2b9dd72e74a0"
+      }
+    },
+    {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms",
+      "state" : {
+        "revision" : "b14b7f4c528c942f121c8b860b9410b2bf57825e",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-case-paths",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-case-paths",
+      "state" : {
+        "revision" : "241301b67d8551c26d8f09bd2c0e52cc49f18007",
+        "version" : "0.8.0"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "revision" : "48254824bb4248676bf7ce56014ff57b142b77eb",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "swift-custom-dump",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-custom-dump",
+      "state" : {
+        "revision" : "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "swift-encore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rythmico/swift-encore",
+      "state" : {
+        "branch" : "swift-5.6",
+        "revision" : "76bf9e1f031830a6d98f05dd76371fc187e085cc"
+      }
+    },
+    {
+      "identity" : "swift-foundation-encore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rythmico/swift-foundation-encore",
+      "state" : {
+        "branch" : "swift-5.6",
+        "revision" : "59972c532e4e5cbb10e32b51256270121d296e26"
+      }
+    },
+    {
+      "identity" : "swift-identified-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-identified-collections",
+      "state" : {
+        "revision" : "680bf440178a78a627b1c2c64c0855f6523ad5b9",
+        "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "swift-nonempty",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-nonempty",
+      "state" : {
+        "revision" : "8074e5f2e4a6de5a42476e545cc33438021aa2a4",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics",
+      "state" : {
+        "revision" : "0a5bc04095a675662cf24757cc0640aa2204253b",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "swift-tagged",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-tagged",
+      "state" : {
+        "revision" : "f3f773a5e13f3c8f0ab1ce2ae6378058acefa87d",
+        "version" : "0.7.0"
+      }
+    },
+    {
+      "identity" : "version",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/Version",
+      "state" : {
+        "revision" : "1fe824b80d89201652e7eca7c9252269a1d85e25",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "50a70a9d3583fe228ce672e8923010c8df2deddd",
+        "version" : "0.2.1"
+      }
+    },
+    {
+      "identity" : "xctjsonkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davdroman/XCTJSONKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7e161faf6024c7488437d799c415fc8c666f3a05"
+      }
+    }
+  ],
+  "version" : 2
 }

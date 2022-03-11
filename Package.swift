@@ -53,6 +53,6 @@ let package = Package(
 )
 
 package.dependencies = [
-    .package(url: "https://github.com/rythmico/swift-foundation-encore", branch: "main"),
+    .package(url: "https://github.com/rythmico/swift-foundation-encore", branch: "swift-5.6"),
     .package(url: "https://github.com/davdroman/XCTJSONKit", branch: "main"),
 ]
