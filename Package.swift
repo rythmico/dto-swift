@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -38,7 +38,7 @@ let package = Package(
         ]),
 
         .target(name: "CoreDTO", dependencies: [
-            .product(name: "FoundationEncore", package: "FoundationEncore"),
+            .product(name: "FoundationEncore", package: "swift-foundation-encore"),
         ]),
         .testTarget(name: "CoreDTOTests", dependencies: [
             .target(name: "CoreDTO"),
@@ -46,13 +46,13 @@ let package = Package(
         ]),
 
         .target(name: "XCTDTOKit", dependencies: [
-            .product(name: "FoundationEncore", package: "FoundationEncore"),
+            .product(name: "FoundationEncore", package: "swift-foundation-encore"),
             .product(name: "XCTJSONKit", package: "XCTJSONKit"),
         ]),
     ]
 )
 
 package.dependencies = [
-    .package(name: "FoundationEncore", url: "https://github.com/rythmico/swift-foundation-encore", .branch("main")),
-    .package(name: "XCTJSONKit", url: "https://github.com/davdroman/XCTJSONKit", .branch("main")),
+    .package(url: "https://github.com/rythmico/swift-foundation-encore", branch: "main"),
+    .package(url: "https://github.com/davdroman/XCTJSONKit", branch: "main"),
 ]
