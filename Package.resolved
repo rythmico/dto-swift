@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/davdroman/PhoneNumberKit",
       "state" : {
-        "branch" : "davdroman-improvements",
-        "revision" : "d9f14aa3f61a4f9bf3d6ce1f01e2d57dd71bb948"
+        "branch" : "master",
+        "revision" : "e81874f7e25458f66dc38ca00517eafed330f482"
       }
     },
     {
@@ -105,7 +105,7 @@
       "location" : "https://github.com/rythmico/swift-foundation-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "438bdc3601a652cffdf9f7ee69da2db06c4277aa"
+        "revision" : "3ad4ba51b2fa9e30aac8604362940d7e0502be90"
       }
     },
     {
