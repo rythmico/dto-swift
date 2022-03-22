@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/davdroman/PeriodDuration",
       "state" : {
-        "revision" : "d6689e32ec22f77cd45c4967ed0d103d81c1abb9",
-        "version" : "0.10.0"
+        "revision" : "eb45faed4ac6162aa004898694c5843fcd492049",
+        "version" : "0.11.0"
       }
     },
     {
@@ -51,7 +51,7 @@
       "location" : "https://github.com/davdroman/PreciseDecimal",
       "state" : {
         "branch" : "main",
-        "revision" : "2ab57fc9a2262204c2bde46d133d2b9dd72e74a0"
+        "revision" : "bdf761284b5699b57198b234042d09eaeb0d2975"
       }
     },
     {
@@ -168,7 +168,7 @@
       "location" : "https://github.com/davdroman/XCTJSONKit",
       "state" : {
         "branch" : "main",
-        "revision" : "7e161faf6024c7488437d799c415fc8c666f3a05"
+        "revision" : "f4b688f6e3199defaa44e5aa69c93e0bf635c827"
       }
     }
   ],
