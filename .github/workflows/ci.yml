@@ -17,7 +17,7 @@ concurrency:
 jobs:
   macOS:
     name: ${{ matrix.platform }}
-    runs-on: macos-11
+    runs-on: macos-12
     strategy:
       fail-fast: false
       matrix:
@@ -28,13 +28,12 @@ jobs:
     - uses: actions/checkout@v2
     - uses: mxcl/xcodebuild@v1
       with:
-        xcode: ~13.2
-        swift: ~5.5
+        swift: ~5.6
         platform: ${{ matrix.platform }}
   linux:
     runs-on: ubuntu-latest
     container:
-      image: swift:5.5
+      image: swift:5.6
     steps:
     - uses: actions/checkout@v2
     - run: swift test --parallel --sanitize=thread -Xswiftc -warnings-as-errors
