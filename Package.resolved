@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rythmico/swift-encore",
       "state" : {
-        "branch" : "swift-5.6",
-        "revision" : "76bf9e1f031830a6d98f05dd76371fc187e085cc"
+        "branch" : "main",
+        "revision" : "f3a8a1d77f88b12be6804aee9f2f6665907e3ca2"
       }
     },
     {
@@ -104,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rythmico/swift-foundation-encore",
       "state" : {
-        "branch" : "swift-5.6",
-        "revision" : "59972c532e4e5cbb10e32b51256270121d296e26"
+        "branch" : "main",
+        "revision" : "438bdc3601a652cffdf9f7ee69da2db06c4277aa"
       }
     },
     {
