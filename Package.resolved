@@ -32,17 +32,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/davdroman/PeriodDuration",
       "state" : {
-        "revision" : "eb45faed4ac6162aa004898694c5843fcd492049",
-        "version" : "0.11.0"
+        "revision" : "b5448c22e35a7550a62a806bed08ee2940b17ed4",
+        "version" : "0.12.0"
       }
     },
     {
       "identity" : "phonenumberkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/davdroman/PhoneNumberKit",
+      "location" : "https://github.com/marmelroy/PhoneNumberKit",
       "state" : {
         "branch" : "master",
-        "revision" : "e81874f7e25458f66dc38ca00517eafed330f482"
+        "revision" : "216765f6fe3aa6f05f319c51d2bda57e6137777b"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-case-paths",
       "state" : {
-        "revision" : "241301b67d8551c26d8f09bd2c0e52cc49f18007",
-        "version" : "0.8.0"
+        "revision" : "ce9c0d897db8a840c39de64caaa9b60119cf4be8",
+        "version" : "0.8.1"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-custom-dump",
       "state" : {
-        "revision" : "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
-        "version" : "0.3.0"
+        "revision" : "c4f78db9b90ca57b7b6abc2223e235242739ea3c",
+        "version" : "0.4.0"
       }
     },
     {
@@ -96,7 +96,7 @@
       "location" : "https://github.com/rythmico/swift-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "f3a8a1d77f88b12be6804aee9f2f6665907e3ca2"
+        "revision" : "f704ec2185b009a466b6ccb159c971b3de9d5530"
       }
     },
     {
@@ -105,7 +105,7 @@
       "location" : "https://github.com/rythmico/swift-foundation-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "3ad4ba51b2fa9e30aac8604362940d7e0502be90"
+        "revision" : "e998e78a12b4644885a413eb6f91ea5c0904c49b"
       }
     },
     {
@@ -133,6 +133,15 @@
       "state" : {
         "revision" : "0a5bc04095a675662cf24757cc0640aa2204253b",
         "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "swift-parsing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-parsing",
+      "state" : {
+        "revision" : "28d32e9ace1c4c43f5e5a177be837a202494c2d5",
+        "version" : "0.9.2"
       }
     },
     {
@@ -168,7 +177,7 @@
       "location" : "https://github.com/davdroman/XCTJSONKit",
       "state" : {
         "branch" : "main",
-        "revision" : "f4b688f6e3199defaa44e5aa69c93e0bf635c827"
+        "revision" : "ad5527a077f3517ef4da31cbebfc7514ab5f4cb5"
       }
     }
   ],
