@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/davdroman/PeriodDuration",
       "state" : {
-        "revision" : "b5448c22e35a7550a62a806bed08ee2940b17ed4",
-        "version" : "0.12.0"
+        "revision" : "abbd8233f9c0732e133b0e89a8897cfd5feca144",
+        "version" : "0.13.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/marmelroy/PhoneNumberKit",
       "state" : {
-        "branch" : "master",
-        "revision" : "216765f6fe3aa6f05f319c51d2bda57e6137777b"
+        "revision" : "5a1ff64be62f7ddea35618e6084997419a3f03d2",
+        "version" : "3.4.0"
       }
     },
     {
@@ -105,7 +105,7 @@
       "location" : "https://github.com/rythmico/swift-foundation-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "e998e78a12b4644885a413eb6f91ea5c0904c49b"
+        "revision" : "86046cfd5a6e10354d3699c55bb7440f9719f052"
       }
     },
     {
