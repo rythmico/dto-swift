@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/marmelroy/PhoneNumberKit",
       "state" : {
-        "revision" : "5a1ff64be62f7ddea35618e6084997419a3f03d2",
-        "version" : "3.4.0"
+        "revision" : "d4c094934237b23344cf948dd999c431feb8da06",
+        "version" : "3.4.1"
       }
     },
     {
@@ -96,7 +96,7 @@
       "location" : "https://github.com/rythmico/swift-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "f704ec2185b009a466b6ccb159c971b3de9d5530"
+        "revision" : "0805c77ecf32f4faa3dcc3c2d7cf86611d30e362"
       }
     },
     {
@@ -105,7 +105,7 @@
       "location" : "https://github.com/rythmico/swift-foundation-encore",
       "state" : {
         "branch" : "main",
-        "revision" : "86046cfd5a6e10354d3699c55bb7440f9719f052"
+        "revision" : "e216704ec64062f4bd39201acb5c9bf052c4e55a"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-identified-collections",
       "state" : {
-        "revision" : "680bf440178a78a627b1c2c64c0855f6523ad5b9",
-        "version" : "0.3.2"
+        "revision" : "2d6b7ffcc67afd9077fac5e5a29bcd6d39b71076",
+        "version" : "0.4.0"
       }
     },
     {
